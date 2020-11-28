@@ -47,5 +47,19 @@ namespace KataTests
             string expected = "Fizz";
             Assert.Equal(expected, FizzBuzzKata.FizzBuzz(-9));
         }
+
+        [Fact]
+        public void ReturnBuzz_WhenDivisibleBy5Negative()
+        {
+            string expected = "Buzz";
+            Assert.Equal(expected, FizzBuzzKata.FizzBuzz(-10));
+        }
+
+        [Fact]
+        public void ReturnFizzBuzz_WhenDivisibleNegativeBy3AndBy5()
+        {
+            string expected = "FizzBuzz";
+            Assert.Equal(expected, FizzBuzzKata.FizzBuzz(-15));
+        }
     }
 }
